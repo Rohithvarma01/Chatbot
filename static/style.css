@@ -2,7 +2,7 @@ body{
     background-color: rgb(170, 196, 205);
 }
 #header{
-    align-items: center;
+    align-items: center; 
     text-align: center;
     font-style: oblique;
     
