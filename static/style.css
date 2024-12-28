@@ -1,0 +1,96 @@
+body{
+    background-color: rgb(170, 196, 205);
+}
+#header{
+    align-items: center;
+    text-align: center;
+    font-style: oblique;
+    
+}
+h1{
+    color: rgb(242, 63, 81);
+}
+#chat-container {
+width: 500px;
+margin: 50px auto;
+border: 1px solid #ccc;
+border-radius: 25px;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+height: 400px;
+background-color: #dcfff6;
+}
+
+#chat-log {
+flex-grow: 1;
+padding: 10px;
+overflow-y: scroll;
+background-color: whitesmoke;
+}
+
+#input-area {
+display: flex;
+padding: 10px;
+border-top: 1px solid black;
+border-radius: 50px;
+background-color:rgb(37, 121, 157);
+}
+
+#user-input {
+flex-grow: 1;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 20px;
+margin-right: 5px;
+}
+
+#send-button {
+padding: 8px 15px;
+background-color: aquamarine;
+color: black;
+border: none;
+border-radius: 50px;
+cursor: pointer; 
+position: relative;
+transition: all 0.5s;
+overflow: hidden;
+}
+#send-button span{
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+#send-button span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+#send-button:hover span {
+padding-right: 25px;
+}
+
+#send-button:hover span:after {
+opacity: 1;
+right: 0;
+}
+
+.user-message, .bot-message{
+padding: 8px;
+margin-bottom: 5px;
+border-radius: 5px;
+}
+
+.user-message{
+background-color: #dcfff6;
+text-align: right;
+}
+
+.bot-message{
+background-color: #bdbec6;
+text-align: left;
+}
