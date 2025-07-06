@@ -1,4 +1,4 @@
-****** AI Chatbot *****
+****** Chatbot *****
 
 
 A simple and interactive chatbot application built with Flask and Google/Generative AI API that generates conversational responses.
